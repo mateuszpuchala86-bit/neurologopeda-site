@@ -23,10 +23,13 @@ export default function Home() {
   borderBottom: "1px solid rgba(0,0,0,0.05)"
 }}>
 
-  <a href="#o-mnie" style={linkStyle}>O mnie</a>
-  <a href="#zakres" style={linkStyle}>Zakres</a>
-  <a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
-  <a href="#kontakt" style={linkStyle}>Kontakt</a>
+<a href="#o-mnie" style={linkStyle}>O mnie</a>
+<a href="#zakres" style={linkStyle}>Zakres</a>
+<a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
+
+<a href="#cennik" style={linkStyle}>Cennik</a>
+
+<a href="#kontakt" style={linkStyle}>Kontakt</a>
 
 </nav>
       {/* HERO */}
@@ -375,7 +378,67 @@ export default function Home() {
     Jeśli masz wątpliwości dotyczące karmienia, rozwoju lub funkcjonowania dziecka —
     możesz skontaktować się ze mną bezpośrednio.
   </p>
+<section id="cennik" style={{
+  background: "#F7F3EF",
+  padding: "80px 20px",
+  textAlign: "center"
+}}>
 
+  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+    Cennik
+  </h2>
+
+  <p style={{
+    maxWidth: "650px",
+    margin: "0 auto 40px",
+    lineHeight: "1.8",
+    fontSize: "15px",
+    color: "#4A4A4A"
+  }}>
+    Transparentność i jasne zasady są podstawą współpracy terapeutycznej.
+  </p>
+
+  <div style={{
+    maxWidth: "800px",
+    margin: "0 auto",
+    display: "grid",
+    gap: "15px"
+  }}>
+
+    {[
+      { name: "Diagnoza neurologopedyczna", price: "180 zł" },
+      { name: "Konsultacja neurologopedyczna", price: "200 zł" },
+      { name: "Terapia neurologopedyczna", price: "150 zł" },
+      { name: "Elektrostymulacja (do 30 minut)", price: "50 zł" },
+      { name: "Konsultacja noworodka / niemowlaka (90 min)", price: "od 230 zł" },
+      { name: "Terapia logopedyczna z Forbrain (30 min)", price: "100 zł" }
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "18px 20px",
+        borderRadius: "12px",
+        display: "flex",
+        justifyContent: "space-between",
+        boxShadow: "0 8px 20px rgba(0,0,0,0.05)",
+        fontSize: "15px"
+      }}>
+        <span>{item.name}</span>
+        <b>{item.price}</b>
+      </div>
+    ))}
+
+  </div>
+
+  {/* INFO */}
+  <p style={{
+    marginTop: "30px",
+    fontSize: "13px",
+    color: "#8B7D73"
+  }}>
+    Oferowane narzędzia i metody zawarte są w cenie terapii.
+  </p>
+
+</section>
   {/* KONTAKT BOX */}
   <div style={{
     maxWidth: "520px",
