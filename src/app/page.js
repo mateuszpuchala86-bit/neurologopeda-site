@@ -18,7 +18,6 @@ export default function Home() {
         background: "#F7F3EF"
       }}
     >
-
       {/* MENU */}
       <nav
         style={{
@@ -43,7 +42,7 @@ export default function Home() {
         <a href="#top" style={linkStyle}>Start</a>
       </nav>
 
-      {/* HERO (TYLKO JEDEN - FIX VERCEL) */}
+      {/* HERO */}
       <section
         style={{
           background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
@@ -133,7 +132,7 @@ export default function Home() {
 
           <p style={{ lineHeight: "1.8", color: "#4A4A4A" }}>
             Praca z niemowlętami i mamami wymaga zaufania, delikatności i doświadczenia.
-            Każda terapia prowadzona jest indywidualnie.
+            Każda terapia prowadzona jest indywidualnie w oparciu o potrzeby dziecka i rodziny.
           </p>
 
           <p style={{ marginTop: "15px", color: "#8B7D73" }}>
@@ -144,35 +143,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O MNIE */}
+      {/* O MNIE (pełna wersja przywrócona) */}
       <section id="o-mnie" style={{ background: "#EFE7E1", padding: "70px 20px", textAlign: "center" }}>
-        <h2>O mnie</h2>
-        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8" }}>
+        <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>O mnie</h2>
+
+        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8", fontSize: "16px" }}>
           Jestem neurologopedą klinicznym i specjalistą wczesnej interwencji.
+          Pracuję z noworodkami, niemowlętami oraz dziećmi z wyzwaniami neurologicznymi i genetycznymi.
+          W terapii stosuję podejście holistyczne, współpracując z zespołem lekarzy, fizjoterapeutów i ortodontów.
         </p>
       </section>
 
       {/* ZAKRES */}
       <section id="zakres" style={{ background: "#F7F3EF", padding: "70px 20px", textAlign: "center" }}>
-        <h2>Zakres terapii</h2>
+        <h2 style={{ fontSize: "26px" }}>Zakres terapii</h2>
 
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px", marginTop: "30px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "22px", marginTop: "35px" }}>
           {[
-            "Karmienie niemowląt",
-            "Dysfagia",
+            "Problemy z karmieniem niemowląt",
+            "Dysfagia i zaburzenia połykania",
             "Terapia ustno-twarzowa",
             "Wsparcie laktacyjne",
+            "Wady genetyczne i neurologiczne",
             "Opóźniony rozwój mowy"
           ].map((item, i) => (
-            <div
-              key={i}
-              style={{
-                background: "white",
-                padding: "20px",
-                borderRadius: "12px",
-                width: "260px"
-              }}
-            >
+            <div key={i} style={{
+              background: "white",
+              padding: "22px",
+              borderRadius: "14px",
+              width: "260px",
+              boxShadow: "0 10px 25px rgba(0,0,0,0.06)"
+            }}>
               {item}
             </div>
           ))}
@@ -182,31 +183,45 @@ export default function Home() {
       {/* WIZYTA */}
       <section id="wizyta" style={{ background: "#F7F3EF", padding: "80px 20px", textAlign: "center" }}>
         <h2>Jak wygląda pierwsza wizyta?</h2>
-        <p style={{ maxWidth: "700px", margin: "0 auto" }}>
-          Spokojna diagnoza i rozmowa z rodzicem.
+
+        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8" }}>
+          Pierwsze spotkanie to spokojna diagnoza funkcjonalna i rozmowa z rodzicem.
         </p>
       </section>
 
       <ReviewsSection />
 
-      {/* CENNIK */}
+      {/* CENNIK (przywrócony pełny kontekst) */}
       <section id="cennik" style={{ background: "#F7F3EF", padding: "80px 20px", textAlign: "center" }}>
-        <h2>Cennik</h2>
+        <h2 style={{ fontSize: "26px", marginBottom: "20px" }}>Cennik</h2>
+
+        <div style={{ maxWidth: "800px", margin: "0 auto", display: "grid", gap: "15px" }}>
+          {[
+            { name: "Diagnoza neurologopedyczna", price: "180 zł" },
+            { name: "Konsultacja neurologopedyczna", price: "200 zł" },
+            { name: "Terapia neurologopedyczna", price: "150 zł" },
+            { name: "Elektrostymulacja", price: "50 zł" },
+            { name: "Konsultacja niemowlaka", price: "od 230 zł" }
+          ].map((item, i) => (
+            <div key={i} style={{
+              background: "white",
+              padding: "18px 20px",
+              borderRadius: "12px",
+              display: "flex",
+              justifyContent: "space-between"
+            }}>
+              <span>{item.name}</span>
+              <b>{item.price}</b>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* KONTAKT */}
       <section id="kontakt" style={{ background: "#EFE7E1", padding: "90px 20px", textAlign: "center" }}>
         <h2>Kontakt</h2>
 
-        <div
-          style={{
-            maxWidth: "520px",
-            margin: "0 auto",
-            background: "white",
-            padding: "30px",
-            borderRadius: "16px"
-          }}
-        >
+        <div style={{ maxWidth: "520px", margin: "0 auto", background: "white", padding: "30px", borderRadius: "16px" }}>
           <p>📞 698 042 051</p>
           <p>📧 kpneurologopeda@gmail.com</p>
 
