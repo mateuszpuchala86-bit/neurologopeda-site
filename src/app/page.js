@@ -334,24 +334,68 @@ export default function Home() {
 <ReviewsSection />
 
 
-      {/* KONTAKT */}
-      <section id="kontakt" style={{
-        background: "#EFE7E1",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "26px" }}>Kontakt</h2>
+{/* KONTAKT */}
+<section id="kontakt" style={{
+  background: "#EFE7E1",
+  padding: "90px 20px",
+  textAlign: "center"
+}}>
 
-        <p style={{ marginTop: "15px" }}>📞 698 042 051</p>
-        <p>📧 kpneurologopeda@gmail.com</p>
+  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+    Kontakt
+  </h2>
 
-        <div style={{
-          maxWidth: "520px",
-          margin: "35px auto"
-        }}>
-          <ContactForm />
-        </div>
-      </section>
+  <p style={{
+    maxWidth: "600px",
+    margin: "0 auto 30px",
+    lineHeight: "1.8",
+    fontSize: "16px",
+    color: "#4A4A4A"
+  }}>
+    Jeśli masz wątpliwości dotyczące karmienia, rozwoju lub funkcjonowania dziecka —
+    możesz skontaktować się ze mną bezpośrednio.
+  </p>
+
+  {/* KONTAKT BOX */}
+  <div style={{
+    maxWidth: "520px",
+    margin: "0 auto",
+    background: "white",
+    padding: "30px",
+    borderRadius: "16px",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+    textAlign: "left"
+  }}>
+
+    <p style={{ marginBottom: "10px" }}>📞 <b>698 042 051</b></p>
+    <p style={{ marginBottom: "20px" }}>📧 kpneurologopeda@gmail.com</p>
+
+    <p style={{
+      fontSize: "13px",
+      color: "#8B7D73",
+      marginBottom: "20px",
+      lineHeight: "1.6"
+    }}>
+      Odpowiadam na wiadomości w możliwie najkrótszym czasie.
+      W pilnych przypadkach proszę o kontakt telefoniczny.
+    </p>
+
+    <div style={{ marginTop: "10px" }}>
+      <ContactForm />
+    </div>
+
+  </div>
+
+  {/* MINI TRUST */}
+  <p style={{
+    marginTop: "30px",
+    fontSize: "13px",
+    color: "#9C8F85"
+  }}>
+    Terapia prowadzona w atmosferze spokoju i bezpieczeństwa
+  </p>
+
+</section>
 
     </main>
   );
