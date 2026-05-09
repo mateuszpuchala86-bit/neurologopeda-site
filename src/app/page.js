@@ -8,7 +8,26 @@ export default function Home() {
       color: "#3A3A3A",
       background: "#F7F3EF"
     }}>
+{/* MENU */}
+<nav style={{
+  position: "sticky",
+  top: 0,
+  background: "rgba(247, 243, 239, 0.9)",
+  backdropFilter: "blur(10px)",
+  padding: "15px 20px",
+  display: "flex",
+  justifyContent: "center",
+  gap: "25px",
+  zIndex: 1000,
+  borderBottom: "1px solid rgba(0,0,0,0.05)"
+}}>
 
+  <a href="#o-mnie" style={linkStyle}>O mnie</a>
+  <a href="#zakres" style={linkStyle}>Zakres</a>
+  <a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
+  <a href="#kontakt" style={linkStyle}>Kontakt</a>
+
+</nav>
       {/* HERO */}
       <section style={{
         background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
@@ -200,7 +219,7 @@ export default function Home() {
   </div>
 </section>
       {/* O MNIE */}
-      <section style={{
+      <section id="o-mnie" style={{
         background: "#EFE7E1",
         padding: "70px 20px",
         textAlign: "center"
@@ -221,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* ZAKRES */}
-      <section style={{
+      <section id="zakres" style={{
         background: "#F7F3EF",
         padding: "70px 20px",
         textAlign: "center"
@@ -257,7 +276,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-<section style={{
+<section id="wizyta" style={{
   background: "#F7F3EF",
   padding: "80px 20px",
   textAlign: "center"
@@ -400,3 +419,9 @@ export default function Home() {
     </main>
   );
 }
+const linkStyle = {
+  textDecoration: "none",
+  color: "#4A4A4A",
+  fontSize: "14px",
+  fontWeight: "500"
+};
