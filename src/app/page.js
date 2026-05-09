@@ -26,6 +26,7 @@ export default function Home() {
           background: "#F7F3EF",
           padding: "15px 20px",
           display: "flex",
+flexWrap: "wrap",
           justifyContent: "center",
           gap: "20px",
           borderBottom: "1px solid #ddd",
@@ -62,9 +63,8 @@ export default function Home() {
     Neurologopedia kliniczna • Wczesna interwencja
   </span>
 
-  <h1
-    style={{
-      fontSize: "46px",
+  <h1 style={{
+  fontSize: "clamp(28px, 6vw, 46px)",
       marginBottom: "10px",
       fontWeight: "600",
       letterSpacing: "-0.5px"
@@ -73,8 +73,8 @@ export default function Home() {
     Katarzyna Puchała
   </h1>
 
-  <h2
-    style={{
+  <h2 style={{
+  fontSize: "clamp(16px, 4vw, 22px)",
       fontWeight: "300",
       color: "#8B7D73",
       marginBottom: "25px"
@@ -88,7 +88,7 @@ export default function Home() {
       maxWidth: "680px",
       margin: "0 auto 30px",
       lineHeight: "1.9",
-      fontSize: "17px",
+      fontSize: "clamp(14px, 3.5vw, 17px)",
       color: "#4A4A4A"
     }}
   >
@@ -102,7 +102,9 @@ export default function Home() {
         background: "#B8956A",
         color: "white",
         border: "none",
-        padding: "14px 30px",
+        padding: "16px 28px",
+width: "100%",
+maxWidth: "320px",
         borderRadius: "12px",
         cursor: "pointer",
         fontSize: "15px",
@@ -128,7 +130,7 @@ export default function Home() {
 <section
   style={{
     background: "#F7F3EF",
-    padding: "80px 20px",
+    padding: "70px 16px",
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center",
@@ -142,10 +144,11 @@ export default function Home() {
     src="/doctor.jpg"
     alt="Gabinet neurologopedy"
     style={{
-      width: "320px",
-      borderRadius: "16px",
-      boxShadow: "0 15px 40px rgba(0,0,0,0.12)"
-    }}
+  width: "100%",
+  maxWidth: "320px",
+  borderRadius: "16px",
+  boxShadow: "0 15px 40px rgba(0,0,0,0.12)"
+}}
   />
 
   {/* TEKST */}
@@ -172,7 +175,7 @@ export default function Home() {
 <section
   style={{
     background: "#F7F3EF",
-    padding: "80px 20px",
+    padding: "70px 16px",
     textAlign: "center"
   }}
 >
@@ -203,7 +206,8 @@ export default function Home() {
           background: "white",
           padding: "20px",
           borderRadius: "14px",
-          width: "260px",
+          width: "100%",
+maxWidth: "320px",
           boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
           fontSize: "15px",
           lineHeight: "1.6"
@@ -220,7 +224,7 @@ export default function Home() {
   id="o-mnie"
   style={{
     background: "#EFE7E1",
-    padding: "80px 20px",
+    padding: "70px 16px",
     textAlign: "center"
   }}
 >
@@ -260,7 +264,7 @@ export default function Home() {
   id="zakres"
   style={{
     background: "#F7F3EF",
-    padding: "80px 20px",
+    padding: "70px 16px",
     textAlign: "center"
   }}
 >
@@ -290,7 +294,8 @@ export default function Home() {
           background: "white",
           padding: "22px",
           borderRadius: "14px",
-          width: "260px",
+          width: "100%",
+maxWidth: "320px",
           boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
           fontSize: "15px"
         }}
@@ -307,7 +312,7 @@ export default function Home() {
   id="wizyta"
   style={{
     background: "#F7F3EF",
-    padding: "80px 20px",
+    padding: "70px 16px",
     textAlign: "center"
   }}
 >
@@ -360,7 +365,8 @@ export default function Home() {
           background: "white",
           padding: "22px",
           borderRadius: "14px",
-          width: "260px",
+          width: "100%",
+maxWidth: "320px",
           boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
           textAlign: "left"
         }}
@@ -393,7 +399,7 @@ export default function Home() {
   id="cennik"
   style={{
     background: "#F7F3EF",
-    padding: "80px 20px",
+    padding: "70px 16px",
     textAlign: "center"
   }}
 >
@@ -460,7 +466,7 @@ export default function Home() {
 </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" style={{ padding: "80px 20px", textAlign: "center" }}>
+      <section id="kontakt" style={{ padding: "70px 16px", textAlign: "center" }}>
         <h2>Kontakt</h2>
         <p>📞 698 042 051</p>
         <p>📧 kpneurologopeda@gmail.com</p>
