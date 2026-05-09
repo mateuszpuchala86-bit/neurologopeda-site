@@ -26,3 +26,21 @@ body {
   background: #F7F3EF;
   color: #3A3A3A;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px !important;
+  }
+
+  nav {
+    gap: 12px !important;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 60px 15px !important;
+  }
+}

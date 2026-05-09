@@ -12,7 +12,8 @@ export default function Home() {
 <nav style={{
   position: "sticky",
   top: 0,
-  background: "rgba(247, 243, 239, 0.9)",
+  background: "rgba(247, 243, 239, 0.75)",
+  boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
   backdropFilter: "blur(10px)",
   padding: "15px 20px",
   display: "flex",
