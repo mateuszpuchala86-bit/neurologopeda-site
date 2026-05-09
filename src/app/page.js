@@ -34,15 +34,90 @@ export default function Home() {
 <a href="#o-mnie" style={linkStyle}>O mnie</a>
 <a href="#zakres" style={linkStyle}>Zakres</a>
 <a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
-
 <a href="#cennik" style={linkStyle}>Cennik</a>
-
 <a href="#kontakt" style={linkStyle}>Kontakt</a>
 <a href="#top" style={linkStyle}>Start</a>
 
 </nav>
       {/* HERO */}
-      <section style={{
+<section style={{
+  background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
+  padding: "120px 20px 90px",
+  textAlign: "center"
+}}>
+
+  {/* BADGE */}
+  <span style={{
+    display: "inline-block",
+    background: "#EFE7E1",
+    padding: "6px 14px",
+    borderRadius: "20px",
+    fontSize: "12px",
+    color: "#7A6A5F",
+    marginBottom: "20px",
+    letterSpacing: "0.5px"
+  }}>
+    Neurologopedia kliniczna • Wczesna interwencja
+  </span>
+
+  {/* IMIĘ */}
+  <h1 style={{
+    fontSize: "46px",
+    marginBottom: "10px",
+    letterSpacing: "-0.5px",
+    fontWeight: "600"
+  }}>
+    Katarzyna Puchała
+  </h1>
+
+  {/* SPECJALIZACJA */}
+  <h2 style={{
+    fontWeight: "300",
+    color: "#8B7D73",
+    marginBottom: "25px"
+  }}>
+    Neurologopeda kliniczny
+  </h2>
+
+  {/* OPIS */}
+  <p style={{
+    maxWidth: "680px",
+    margin: "0 auto 30px",
+    lineHeight: "1.9",
+    fontSize: "17px",
+    color: "#4A4A4A"
+  }}>
+    Wspieram niemowlęta i dzieci w trudnościach z karmieniem, oddychaniem
+    oraz rozwojem funkcji ustno-twarzowych. Pracuję w oparciu o spokojną,
+    indywidualną i bezpieczną terapię od pierwszych dni życia.
+  </p>
+
+  {/* CTA */}
+  <a href="#kontakt">
+    <button style={{
+      background: "#B8956A",
+      color: "white",
+      border: "none",
+      padding: "14px 30px",
+      borderRadius: "12px",
+      cursor: "pointer",
+      fontSize: "15px",
+      boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
+    }}>
+      Umów konsultację
+    </button>
+  </a>
+
+  {/* TRUST LINE */}
+  <p style={{
+    marginTop: "22px",
+    fontSize: "13px",
+    color: "#9C8F85"
+  }}>
+    Spokojne, indywidualne podejście • Terapia oparta na wiedzy klinicznej
+  </p>
+
+</section>
         background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
         padding: "110px 20px",
         textAlign: "center"
