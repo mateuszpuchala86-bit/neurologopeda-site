@@ -233,7 +233,89 @@ export default function Home() {
         <h2>Pierwsza wizyta</h2>
         <p>Opis wkrótce</p>
       </section>
+{/* PIERWSZA WIZYTA */}
+<section
+  id="wizyta"
+  style={{
+    background: "#F7F3EF",
+    padding: "80px 20px",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
+    Jak wygląda pierwsza wizyta?
+  </h2>
 
+  <p
+    style={{
+      maxWidth: "750px",
+      margin: "0 auto 40px",
+      lineHeight: "1.8",
+      fontSize: "16px",
+      color: "#4A4A4A"
+    }}
+  >
+    Pierwsze spotkanie ma na celu spokojną ocenę funkcjonowania dziecka
+    oraz rozmowę z rodzicem. Bez presji i bez pośpiechu — w atmosferze bezpieczeństwa.
+  </p>
+
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "20px"
+    }}
+  >
+    {[
+      {
+        title: "Rozmowa z rodzicem",
+        text: "Poznaję historię rozwoju dziecka i główne trudności."
+      },
+      {
+        title: "Obserwacja dziecka",
+        text: "Delikatna ocena funkcji ssania, połykania i oddychania."
+      },
+      {
+        title: "Diagnoza funkcjonalna",
+        text: "Określenie przyczyn trudności i planu dalszego działania."
+      },
+      {
+        title: "Plan terapii",
+        text: "Rodzic otrzymuje jasne wskazówki i plan wsparcia."
+      }
+    ].map((item, i) => (
+      <div
+        key={i}
+        style={{
+          background: "white",
+          padding: "22px",
+          borderRadius: "14px",
+          width: "260px",
+          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          textAlign: "left"
+        }}
+      >
+        <h3 style={{ fontSize: "16px", marginBottom: "10px" }}>
+          {item.title}
+        </h3>
+        <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#555" }}>
+          {item.text}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  <p
+    style={{
+      marginTop: "40px",
+      fontSize: "14px",
+      color: "#8B7D73"
+    }}
+  >
+    Każde dziecko jest inne — tempo i forma pracy zawsze dostosowane są indywidualnie.
+  </p>
+</section>
       <ReviewsSection />
 
       {/* CENNIK */}
