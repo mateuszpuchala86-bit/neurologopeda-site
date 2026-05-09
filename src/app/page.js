@@ -39,11 +39,56 @@ export default function Home() {
 <a href="#top" style={linkStyle}>Start</a>
 
 </nav>
-      {/* HERO */}
-<section style={{
+   <section style={{
   background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
   padding: "120px 20px 90px",
   textAlign: "center"
+}}>
+
+  <span style={{
+    display: "inline-block",
+    background: "#EFE7E1",
+    padding: "6px 14px",
+    borderRadius: "20px",
+    fontSize: "12px",
+    color: "#7A6A5F",
+    marginBottom: "20px"
+  }}>
+    Neurologopedia kliniczna • Wczesna interwencja
+  </span>
+
+  <h1 style={{ fontSize: "46px", marginBottom: "10px", fontWeight: "600" }}>
+    Katarzyna Puchała
+  </h1>
+
+  <h2 style={{ fontWeight: "300", color: "#8B7D73", marginBottom: "25px" }}>
+    Neurologopeda kliniczny
+  </h2>
+
+  <p style={{
+    maxWidth: "680px",
+    margin: "0 auto 30px",
+    lineHeight: "1.9",
+    fontSize: "17px",
+    color: "#4A4A4A"
+  }}>
+    Wspieram niemowlęta i dzieci w trudnościach z karmieniem, oddychaniem
+    oraz rozwojem funkcji ustno-twarzowych.
+  </p>
+
+  <a href="#kontakt">
+    <button style={{
+      background: "#B8956A",
+      color: "white",
+      border: "none",
+      padding: "14px 30px",
+      borderRadius: "12px"
+    }}>
+      Umów konsultację
+    </button>
+  </a>
+
+</section>   
 }}>
 
   {/* BADGE */}
