@@ -89,7 +89,6 @@ export default function Home() {
   </a>
 
 </section>   
-}}>
 
   {/* BADGE */}
   <span style={{
