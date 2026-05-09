@@ -1,13 +1,21 @@
+
 import ContactForm from "../components/ContactForm";
 import ReviewsSection from "../components/ReviewsSection";
 
+const linkStyle = {
+  textDecoration: "none",
+  color: "#4A4A4A",
+  fontSize: "14px",
+  fontWeight: "500"
+};
+
 export default function Home() {
   return (
-    <main style={{
-      fontFamily: "Inter, sans-serif",
-      color: "#3A3A3A",
-      background: "#F7F3EF"
-    }}>
+    <main id="top" style={{
+  fontFamily: "Inter, sans-serif",
+  color: "#3A3A3A",
+  background: "#F7F3EF"
+}}>
 {/* MENU */}
 <nav style={{
   position: "sticky",
@@ -30,6 +38,7 @@ export default function Home() {
 <a href="#cennik" style={linkStyle}>Cennik</a>
 
 <a href="#kontakt" style={linkStyle}>Kontakt</a>
+<a href="#top" style={linkStyle}>Start</a>
 
 </nav>
       {/* HERO */}
@@ -357,27 +366,7 @@ export default function Home() {
 <ReviewsSection />
 
 
-{/* KONTAKT */}
-<section id="kontakt" style={{
-  background: "#EFE7E1",
-  padding: "90px 20px",
-  textAlign: "center"
-}}>
 
-  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
-    Kontakt
-  </h2>
-
-  <p style={{
-    maxWidth: "600px",
-    margin: "0 auto 30px",
-    lineHeight: "1.8",
-    fontSize: "16px",
-    color: "#4A4A4A"
-  }}>
-    Jeśli masz wątpliwości dotyczące karmienia, rozwoju lub funkcjonowania dziecka —
-    możesz skontaktować się ze mną bezpośrednio.
-  </p>
 <section id="cennik" style={{
   background: "#F7F3EF",
   padding: "80px 20px",
@@ -439,6 +428,27 @@ export default function Home() {
   </p>
 
 </section>
+{/* KONTAKT */}
+<section id="kontakt" style={{
+  background: "#EFE7E1",
+  padding: "90px 20px",
+  textAlign: "center"
+}}>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+    Kontakt
+  </h2>
+
+  <p style={{
+    maxWidth: "600px",
+    margin: "0 auto 30px",
+    lineHeight: "1.8",
+    fontSize: "16px",
+    color: "#4A4A4A"
+  }}>
+    Jeśli masz wątpliwości dotyczące karmienia, rozwoju lub funkcjonowania dziecka —
+    możesz skontaktować się ze mną bezpośrednio.
+  </p>
   {/* KONTAKT BOX */}
   <div style={{
     maxWidth: "520px",
@@ -483,9 +493,3 @@ export default function Home() {
     </main>
   );
 }
-const linkStyle = {
-  textDecoration: "none",
-  color: "#4A4A4A",
-  fontSize: "14px",
-  fontWeight: "500"
-};
