@@ -18,25 +18,23 @@ export default function Home() {
         background: "#F7F3EF"
       }}
     >
-      {/* MENU */}
+      {/* NAV */}
       <nav
         style={{
           position: "sticky",
           top: 0,
-          background: "rgba(247, 243, 239, 0.75)",
-          boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
-          backdropFilter: "blur(10px)",
+          background: "#F7F3EF",
           padding: "15px 20px",
           display: "flex",
           justifyContent: "center",
-          gap: "25px",
-          zIndex: 1000,
-          borderBottom: "1px solid rgba(0,0,0,0.05)"
+          gap: "20px",
+          borderBottom: "1px solid #ddd",
+          zIndex: 1000
         }}
       >
         <a href="#o-mnie" style={linkStyle}>O mnie</a>
         <a href="#zakres" style={linkStyle}>Zakres</a>
-        <a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
+        <a href="#wizyta" style={linkStyle}>Wizyta</a>
         <a href="#cennik" style={linkStyle}>Cennik</a>
         <a href="#kontakt" style={linkStyle}>Kontakt</a>
       </nav>
@@ -44,44 +42,20 @@ export default function Home() {
       {/* HERO */}
       <section
         style={{
-          background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
-          padding: "120px 20px 90px",
-          textAlign: "center"
+          textAlign: "center",
+          padding: "100px 20px"
         }}
       >
-        <span
-          style={{
-            display: "inline-block",
-            background: "#EFE7E1",
-            padding: "6px 14px",
-            borderRadius: "20px",
-            fontSize: "12px",
-            color: "#7A6A5F",
-            marginBottom: "20px"
-          }}
-        >
-          Neurologopedia kliniczna • Wczesna interwencja
-        </span>
-
-        <h1 style={{ fontSize: "46px", marginBottom: "10px", fontWeight: "600" }}>
+        <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
           Katarzyna Puchała
         </h1>
 
-        <h2 style={{ fontWeight: "300", color: "#8B7D73", marginBottom: "25px" }}>
+        <h2 style={{ fontWeight: 300, color: "#8B7D73" }}>
           Neurologopeda kliniczny
         </h2>
 
-        <p
-          style={{
-            maxWidth: "680px",
-            margin: "0 auto 30px",
-            lineHeight: "1.9",
-            fontSize: "17px",
-            color: "#4A4A4A"
-          }}
-        >
-          Wspieram niemowlęta i dzieci w trudnościach z karmieniem, oddychaniem
-          oraz rozwojem funkcji ustno-twarzowych.
+        <p style={{ maxWidth: "600px", margin: "20px auto", lineHeight: "1.7" }}>
+          Wspieram niemowlęta i dzieci w trudnościach karmienia i rozwoju.
         </p>
 
         <a href="#kontakt">
@@ -90,9 +64,8 @@ export default function Home() {
               background: "#B8956A",
               color: "white",
               border: "none",
-              padding: "14px 30px",
-              borderRadius: "12px",
-              cursor: "pointer"
+              padding: "14px 28px",
+              borderRadius: "10px"
             }}
           >
             Umów konsultację
@@ -100,67 +73,23 @@ export default function Home() {
         </a>
       </section>
 
-      {/* ZAUFANIE / FOTO */}
-      <section
-        style={{
-          background: "#F7F3EF",
-          padding: "80px 20px",
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "50px"
-        }}
-      >
-        <img
-          src="/doctor.jpg"
-          alt="Gabinet neurologopedy"
-          style={{
-            width: "320px",
-            borderRadius: "16px",
-            boxShadow: "0 15px 40px rgba(0,0,0,0.12)"
-          }}
-        />
-
-        <div style={{ maxWidth: "500px" }}>
-          <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
-            Bezpieczna i spokojna terapia
-          </h2>
-
-          <p style={{ lineHeight: "1.8", color: "#4A4A4A" }}>
-            Każda terapia prowadzona jest indywidualnie, w oparciu o potrzeby dziecka i rodziny.
-          </p>
-        </div>
-      </section>
-
       {/* O MNIE */}
-      <section id="o-mnie" style={{ padding: "70px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>O mnie</h2>
-        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8" }}>
-          Jestem neurologopedą klinicznym. Pracuję z niemowlętami i dziećmi z trudnościami
-          neurologicznymi oraz karmieniem.
+      <section id="o-mnie" style={{ padding: "80px 20px", textAlign: "center" }}>
+        <h2>O mnie</h2>
+        <p style={{ maxWidth: "700px", margin: "0 auto" }}>
+          Jestem neurologopedą klinicznym.
         </p>
       </section>
 
       {/* ZAKRES */}
-      <section id="zakres" style={{ padding: "70px 20px", textAlign: "center" }}>
+      <section id="zakres" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>Zakres terapii</h2>
       </section>
 
       {/* WIZYTA */}
       <section id="wizyta" style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2>Jak wygląda pierwsza wizyta?</h2>
-
-        <p style={{ maxWidth: "700px", margin: "0 auto 30px", lineHeight: "1.8" }}>
-          Pierwsza wizyta to spokojna ocena funkcjonowania dziecka i rozmowa z rodzicem.
-        </p>
-
-        <div>
-          <p>✔ Rozmowa z rodzicem</p>
-          <p>✔ Obserwacja dziecka</p>
-          <p>✔ Diagnoza funkcjonalna</p>
-          <p>✔ Plan terapii</p>
-        </div>
+        <h2>Pierwsza wizyta</h2>
+        <p>Opis wkrótce</p>
       </section>
 
       <ReviewsSection />
@@ -168,16 +97,12 @@ export default function Home() {
       {/* CENNIK */}
       <section id="cennik" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>Cennik</h2>
-
-        <p>Diagnoza – 180 zł</p>
-        <p>Konsultacja – 200 zł</p>
-        <p>Terapia – 150 zł</p>
+        <p>Wkrótce</p>
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" style={{ padding: "90px 20px", textAlign: "center" }}>
+      <section id="kontakt" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>Kontakt</h2>
-
         <p>📞 698 042 051</p>
         <p>📧 kpneurologopeda@gmail.com</p>
 
