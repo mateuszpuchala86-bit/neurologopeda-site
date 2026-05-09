@@ -330,6 +330,76 @@ export default function Home() {
   </p>
 
 </section>
+<section style={{
+  background: "#EFE7E1",
+  padding: "80px 20px",
+  textAlign: "center"
+}}>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
+    Opinie pacjentów
+  </h2>
+
+  <p style={{
+    maxWidth: "700px",
+    margin: "0 auto 40px",
+    lineHeight: "1.8",
+    fontSize: "16px",
+    color: "#4A4A4A"
+  }}>
+    Zaufanie rodziców jest dla mnie najważniejsze. Poniżej wybrane opinie pacjentów.
+  </p>
+
+  <div style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "20px"
+  }}>
+
+    {[
+      {
+        text: "Bardzo profesjonalne podejście do dziecka i ogromna empatia. Wszystko dokładnie wytłumaczone.",
+        name: "Pacjentka z ZnanyLekarz"
+      },
+      {
+        text: "W końcu ktoś dokładnie zajął się problemem karmienia mojego dziecka. Ogromna wiedza i spokój.",
+        name: "Mama pacjenta"
+      },
+      {
+        text: "Wizyta przebiegła w bardzo komfortowej atmosferze. Czułam się zaopiekowana.",
+        name: "Pacjentka"
+      }
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "25px",
+        borderRadius: "14px",
+        width: "280px",
+        boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+        textAlign: "left"
+      }}>
+        <p style={{
+          fontSize: "14px",
+          lineHeight: "1.6",
+          color: "#555"
+        }}>
+          “{item.text}”
+        </p>
+
+        <p style={{
+          marginTop: "15px",
+          fontSize: "13px",
+          color: "#8B7D73"
+        }}>
+          — {item.name}
+        </p>
+      </div>
+    ))}
+
+  </div>
+
+</section>
       {/* KONTAKT */}
       <section id="kontakt" style={{
         background: "#EFE7E1",
