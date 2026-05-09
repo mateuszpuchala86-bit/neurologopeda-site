@@ -168,6 +168,53 @@ export default function Home() {
   </div>
 
 </section>
+{/* DLA KOGO */}
+<section
+  style={{
+    background: "#F7F3EF",
+    padding: "80px 20px",
+    textAlign: "center"
+  }}
+>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "30px" }}>
+    Dla kogo jest terapia?
+  </h2>
+
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "20px"
+    }}
+  >
+    {[
+      "Niemowlęta z trudnościami w karmieniu",
+      "Problemy z ssaniem i połykaniem",
+      "Dzieci z opóźnionym rozwojem mowy",
+      "Wady genetyczne i neurologiczne",
+      "Wsparcie dla mam",
+      "Dysfunkcje ustno-twarzowe"
+    ].map((item, i) => (
+      <div
+        key={i}
+        style={{
+          background: "white",
+          padding: "20px",
+          borderRadius: "14px",
+          width: "260px",
+          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          fontSize: "15px",
+          lineHeight: "1.6"
+        }}
+      >
+        {item}
+      </div>
+    ))}
+  </div>
+
+</section>
       {/* O MNIE */}
       <section id="o-mnie" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>O mnie</h2>
