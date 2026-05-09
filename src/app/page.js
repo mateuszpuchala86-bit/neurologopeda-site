@@ -215,24 +215,93 @@ export default function Home() {
   </div>
 
 </section>
-      {/* O MNIE */}
-      <section id="o-mnie" style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2>O mnie</h2>
-        <p style={{ maxWidth: "700px", margin: "0 auto" }}>
-          Jestem neurologopedą klinicznym.
-        </p>
-      </section>
+     {/* O MNIE */}
+<section
+  id="o-mnie"
+  style={{
+    background: "#EFE7E1",
+    padding: "80px 20px",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "26px", marginBottom: "20px" }}>
+    O mnie
+  </h2>
 
-      {/* ZAKRES */}
-      <section id="zakres" style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2>Zakres terapii</h2>
-      </section>
+  <p
+    style={{
+      maxWidth: "750px",
+      margin: "0 auto",
+      lineHeight: "1.9",
+      fontSize: "16px",
+      color: "#4A4A4A"
+    }}
+  >
+    Jestem neurologopedą klinicznym i specjalistą wczesnej interwencji.
+    Pracuję z noworodkami, niemowlętami oraz dziećmi z wyzwaniami
+    neurologicznymi i genetycznymi.
 
-      {/* WIZYTA */}
-      <section id="wizyta" style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2>Pierwsza wizyta</h2>
-        <p>Opis wkrótce</p>
-      </section>
+    <br /><br />
+
+    W terapii kieruję się spokojnym, indywidualnym podejściem,
+    dostosowanym do potrzeb dziecka i rodziny. Współpracuję
+    z lekarzami, fizjoterapeutami oraz innymi specjalistami,
+    aby zapewnić kompleksowe wsparcie.
+
+    <br /><br />
+
+    Mojym celem jest nie tylko terapia, ale również wsparcie rodzica
+    i budowanie poczucia bezpieczeństwa już od pierwszych dni życia dziecka.
+  </p>
+</section>
+
+     {/* ZAKRES */}
+<section
+  id="zakres"
+  style={{
+    background: "#F7F3EF",
+    padding: "80px 20px",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "26px", marginBottom: "30px" }}>
+    Zakres terapii
+  </h2>
+
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "20px"
+    }}
+  >
+    {[
+      "Problemy z karmieniem niemowląt",
+      "Dysfagia i zaburzenia połykania",
+      "Terapia ustno-twarzowa",
+      "Wsparcie laktacyjne",
+      "Wady genetyczne i neurologiczne",
+      "Opóźniony rozwój mowy"
+    ].map((item, i) => (
+      <div
+        key={i}
+        style={{
+          background: "white",
+          padding: "22px",
+          borderRadius: "14px",
+          width: "260px",
+          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          fontSize: "15px"
+        }}
+      >
+        {item}
+      </div>
+    ))}
+  </div>
+</section>
+
+      
 {/* PIERWSZA WIZYTA */}
 <section
   id="wizyta"
