@@ -108,6 +108,96 @@ export default function Home() {
   </div>
 
 </section>
+<section style={{
+  background: "#F7F3EF",
+  padding: "80px 20px",
+  textAlign: "center"
+}}>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "30px" }}>
+    Dla kogo jest terapia?
+  </h2>
+
+  <div style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "20px"
+  }}>
+
+    {[
+      "Niemowlęta z trudnościami w karmieniu",
+      "Problemy z ssaniem i połykaniem",
+      "Dzieci z opóźnionym rozwojem mowy",
+      "Wady genetyczne i neurologiczne",
+      "Wsparcie laktacyjne mam",
+      "Dysfunkcje ustno-twarzowe"
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "20px",
+        borderRadius: "14px",
+        width: "280px",
+        boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+        fontSize: "15px",
+        lineHeight: "1.6"
+      }}>
+        {item}
+      </div>
+    ))}
+
+  </div>
+</section>
+<section style={{
+  background: "#EFE7E1",
+  padding: "80px 20px",
+  textAlign: "center"
+}}>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "20px" }}>
+    Doświadczenie kliniczne
+  </h2>
+
+  <p style={{
+    maxWidth: "750px",
+    margin: "0 auto",
+    lineHeight: "1.8",
+    fontSize: "16px"
+  }}>
+    Pracuję zarówno w gabinecie prywatnym, jak i w środowisku klinicznym,
+    współpracując z zespołami szpitalnymi i specjalistami różnych dziedzin.
+    Doświadczenie obejmuje pracę w oddziałach neurologicznych, laryngologicznych
+    oraz rehabilitacji neurologicznej.
+  </p>
+
+  <div style={{
+    marginTop: "30px",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "15px"
+  }}>
+
+    {[
+      "Oddział neurologiczny",
+      "Oddział laryngologiczny",
+      "Rehabilitacja neurologiczna",
+      "Opieka nad noworodkami",
+      "Terapia pacjentów OUN"
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "15px 20px",
+        borderRadius: "12px",
+        fontSize: "14px",
+        boxShadow: "0 6px 15px rgba(0,0,0,0.05)"
+      }}>
+        {item}
+      </div>
+    ))}
+
+  </div>
+</section>
       {/* O MNIE */}
       <section style={{
         background: "#EFE7E1",
