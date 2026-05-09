@@ -319,10 +319,76 @@ export default function Home() {
       <ReviewsSection />
 
       {/* CENNIK */}
-      <section id="cennik" style={{ padding: "80px 20px", textAlign: "center" }}>
-        <h2>Cennik</h2>
-        <p>Wkrótce</p>
-      </section>
+      {/* CENNIK PREMIUM */}
+<section
+  id="cennik"
+  style={{
+    background: "#F7F3EF",
+    padding: "80px 20px",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+    Cennik
+  </h2>
+
+  <p
+    style={{
+      maxWidth: "650px",
+      margin: "0 auto 40px",
+      lineHeight: "1.8",
+      fontSize: "15px",
+      color: "#4A4A4A"
+    }}
+  >
+    Transparentność i jasne zasady są podstawą współpracy terapeutycznej.
+  </p>
+
+  <div
+    style={{
+      maxWidth: "800px",
+      margin: "0 auto",
+      display: "grid",
+      gap: "18px"
+    }}
+  >
+    {[
+      { name: "Diagnoza neurologopedyczna", price: "180 zł" },
+      { name: "Konsultacja neurologopedyczna", price: "200 zł" },
+      { name: "Terapia neurologopedyczna", price: "150 zł" },
+      { name: "Elektrostymulacja (do 30 minut)", price: "50 zł" },
+      { name: "Konsultacja noworodka / niemowlaka (90 min)", price: "od 230 zł" },
+      { name: "Terapia logopedyczna z Forbrain (30 min)", price: "100 zł" }
+    ].map((item, i) => (
+      <div
+        key={i}
+        style={{
+          background: "white",
+          padding: "20px 24px",
+          borderRadius: "14px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          fontSize: "15px"
+        }}
+      >
+        <span>{item.name}</span>
+        <b style={{ fontSize: "16px" }}>{item.price}</b>
+      </div>
+    ))}
+  </div>
+
+  <p
+    style={{
+      marginTop: "30px",
+      fontSize: "13px",
+      color: "#8B7D73"
+    }}
+  >
+    Oferowane narzędzia i metody zawarte są w cenie terapii.
+  </p>
+</section>
 
       {/* KONTAKT */}
       <section id="kontakt" style={{ padding: "80px 20px", textAlign: "center" }}>
