@@ -124,7 +124,50 @@ export default function Home() {
   </p>
 
 </section>
+{/* ZAUFANIE / FOTO */}
+<section
+  style={{
+    background: "#F7F3EF",
+    padding: "80px 20px",
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "50px"
+  }}
+>
 
+  {/* ZDJĘCIE */}
+  <img
+    src="/doctor.jpg"
+    alt="Gabinet neurologopedy"
+    style={{
+      width: "320px",
+      borderRadius: "16px",
+      boxShadow: "0 15px 40px rgba(0,0,0,0.12)"
+    }}
+  />
+
+  {/* TEKST */}
+  <div style={{ maxWidth: "500px" }}>
+    <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
+      Bezpieczna i spokojna terapia od pierwszych dni życia
+    </h2>
+
+    <p style={{ lineHeight: "1.8", color: "#4A4A4A" }}>
+      Praca z niemowlętami i mamami wymaga zaufania, delikatności i doświadczenia.
+      Każda terapia prowadzona jest indywidualnie, w oparciu o potrzeby dziecka
+      i rodziny.
+    </p>
+
+    <p style={{ marginTop: "15px", color: "#8B7D73" }}>
+      ✔ podejście holistyczne<br/>
+      ✔ współpraca ze specjalistami<br/>
+      ✔ wsparcie karmienia i rozwoju
+    </p>
+  </div>
+
+</section>
       {/* O MNIE */}
       <section id="o-mnie" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>O mnie</h2>
