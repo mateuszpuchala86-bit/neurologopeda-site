@@ -39,7 +39,6 @@ export default function Home() {
         <a href="#wizyta" style={linkStyle}>Pierwsza wizyta</a>
         <a href="#cennik" style={linkStyle}>Cennik</a>
         <a href="#kontakt" style={linkStyle}>Kontakt</a>
-        <a href="#top" style={linkStyle}>Start</a>
       </nav>
 
       {/* HERO */}
@@ -93,9 +92,7 @@ export default function Home() {
               border: "none",
               padding: "14px 30px",
               borderRadius: "12px",
-              cursor: "pointer",
-              fontSize: "15px",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.12)"
+              cursor: "pointer"
             }}
           >
             Umów konsultację
@@ -127,108 +124,65 @@ export default function Home() {
 
         <div style={{ maxWidth: "500px" }}>
           <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
-            Bezpieczna i spokojna terapia od pierwszych dni życia
+            Bezpieczna i spokojna terapia
           </h2>
 
           <p style={{ lineHeight: "1.8", color: "#4A4A4A" }}>
-            Praca z niemowlętami i mamami wymaga zaufania, delikatności i doświadczenia.
-            Każda terapia prowadzona jest indywidualnie w oparciu o potrzeby dziecka i rodziny.
-          </p>
-
-          <p style={{ marginTop: "15px", color: "#8B7D73" }}>
-            ✔ podejście holistyczne<br />
-            ✔ współpraca ze specjalistami<br />
-            ✔ wsparcie karmienia i rozwoju
+            Każda terapia prowadzona jest indywidualnie, w oparciu o potrzeby dziecka i rodziny.
           </p>
         </div>
       </section>
 
-      {/* O MNIE (pełna wersja przywrócona) */}
-      <section id="o-mnie" style={{ background: "#EFE7E1", padding: "70px 20px", textAlign: "center" }}>
+      {/* O MNIE */}
+      <section id="o-mnie" style={{ padding: "70px 20px", textAlign: "center" }}>
         <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>O mnie</h2>
-
-        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8", fontSize: "16px" }}>
-          Jestem neurologopedą klinicznym i specjalistą wczesnej interwencji.
-          Pracuję z noworodkami, niemowlętami oraz dziećmi z wyzwaniami neurologicznymi i genetycznymi.
-          W terapii stosuję podejście holistyczne, współpracując z zespołem lekarzy, fizjoterapeutów i ortodontów.
+        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8" }}>
+          Jestem neurologopedą klinicznym. Pracuję z niemowlętami i dziećmi z trudnościami
+          neurologicznymi oraz karmieniem.
         </p>
       </section>
 
       {/* ZAKRES */}
-      <section id="zakres" style={{ background: "#F7F3EF", padding: "70px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "26px" }}>Zakres terapii</h2>
-
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "22px", marginTop: "35px" }}>
-          {[
-            "Problemy z karmieniem niemowląt",
-            "Dysfagia i zaburzenia połykania",
-            "Terapia ustno-twarzowa",
-            "Wsparcie laktacyjne",
-            "Wady genetyczne i neurologiczne",
-            "Opóźniony rozwój mowy"
-          ].map((item, i) => (
-            <div key={i} style={{
-              background: "white",
-              padding: "22px",
-              borderRadius: "14px",
-              width: "260px",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.06)"
-            }}>
-              {item}
-            </div>
-          ))}
-        </div>
+      <section id="zakres" style={{ padding: "70px 20px", textAlign: "center" }}>
+        <h2>Zakres terapii</h2>
       </section>
 
       {/* WIZYTA */}
-      <section id="wizyta" style={{ background: "#F7F3EF", padding: "80px 20px", textAlign: "center" }}>
+      <section id="wizyta" style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>Jak wygląda pierwsza wizyta?</h2>
 
-        <p style={{ maxWidth: "750px", margin: "0 auto", lineHeight: "1.8" }}>
-          Pierwsze spotkanie to spokojna diagnoza funkcjonalna i rozmowa z rodzicem.
+        <p style={{ maxWidth: "700px", margin: "0 auto 30px", lineHeight: "1.8" }}>
+          Pierwsza wizyta to spokojna ocena funkcjonowania dziecka i rozmowa z rodzicem.
         </p>
+
+        <div>
+          <p>✔ Rozmowa z rodzicem</p>
+          <p>✔ Obserwacja dziecka</p>
+          <p>✔ Diagnoza funkcjonalna</p>
+          <p>✔ Plan terapii</p>
+        </div>
       </section>
 
       <ReviewsSection />
 
-      {/* CENNIK (przywrócony pełny kontekst) */}
-      <section id="cennik" style={{ background: "#F7F3EF", padding: "80px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "26px", marginBottom: "20px" }}>Cennik</h2>
+      {/* CENNIK */}
+      <section id="cennik" style={{ padding: "80px 20px", textAlign: "center" }}>
+        <h2>Cennik</h2>
 
-        <div style={{ maxWidth: "800px", margin: "0 auto", display: "grid", gap: "15px" }}>
-          {[
-            { name: "Diagnoza neurologopedyczna", price: "180 zł" },
-            { name: "Konsultacja neurologopedyczna", price: "200 zł" },
-            { name: "Terapia neurologopedyczna", price: "150 zł" },
-            { name: "Elektrostymulacja", price: "50 zł" },
-            { name: "Konsultacja niemowlaka", price: "od 230 zł" }
-          ].map((item, i) => (
-            <div key={i} style={{
-              background: "white",
-              padding: "18px 20px",
-              borderRadius: "12px",
-              display: "flex",
-              justifyContent: "space-between"
-            }}>
-              <span>{item.name}</span>
-              <b>{item.price}</b>
-            </div>
-          ))}
-        </div>
+        <p>Diagnoza – 180 zł</p>
+        <p>Konsultacja – 200 zł</p>
+        <p>Terapia – 150 zł</p>
       </section>
 
       {/* KONTAKT */}
-      <section id="kontakt" style={{ background: "#EFE7E1", padding: "90px 20px", textAlign: "center" }}>
+      <section id="kontakt" style={{ padding: "90px 20px", textAlign: "center" }}>
         <h2>Kontakt</h2>
 
-        <div style={{ maxWidth: "520px", margin: "0 auto", background: "white", padding: "30px", borderRadius: "16px" }}>
-          <p>📞 698 042 051</p>
-          <p>📧 kpneurologopeda@gmail.com</p>
+        <p>📞 698 042 051</p>
+        <p>📧 kpneurologopeda@gmail.com</p>
 
-          <ContactForm />
-        </div>
+        <ContactForm />
       </section>
-
     </main>
   );
 }
