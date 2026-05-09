@@ -40,7 +40,9 @@ export default function Home() {
 
 </nav>
    <section style={{
-  
+  background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
+  padding: "120px 20px 90px",
+  textAlign: "center"
 }}>
 
   <span style={{
@@ -160,9 +162,7 @@ export default function Home() {
   </p>
 
 </section>
-        background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
-        padding: "110px 20px",
-        textAlign: "center"
+       
       }}>
         <h1 style={{
           fontSize: "44px",
