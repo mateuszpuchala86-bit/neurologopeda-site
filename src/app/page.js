@@ -18,6 +18,7 @@ export default function Home() {
         background: "#F7F3EF"
       }}
     >
+
       {/* MENU */}
       <nav
         style={{
@@ -42,7 +43,7 @@ export default function Home() {
         <a href="#top" style={linkStyle}>Start</a>
       </nav>
 
-      {/* HERO */}
+      {/* HERO (TYLKO JEDEN - FIX VERCEL) */}
       <section
         style={{
           background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
@@ -163,7 +164,15 @@ export default function Home() {
             "Wsparcie laktacyjne",
             "Opóźniony rozwój mowy"
           ].map((item, i) => (
-            <div key={i} style={{ background: "white", padding: "20px", borderRadius: "12px", width: "260px" }}>
+            <div
+              key={i}
+              style={{
+                background: "white",
+                padding: "20px",
+                borderRadius: "12px",
+                width: "260px"
+              }}
+            >
               {item}
             </div>
           ))}
@@ -189,13 +198,22 @@ export default function Home() {
       <section id="kontakt" style={{ background: "#EFE7E1", padding: "90px 20px", textAlign: "center" }}>
         <h2>Kontakt</h2>
 
-        <div style={{ maxWidth: "520px", margin: "0 auto", background: "white", padding: "30px", borderRadius: "16px" }}>
+        <div
+          style={{
+            maxWidth: "520px",
+            margin: "0 auto",
+            background: "white",
+            padding: "30px",
+            borderRadius: "16px"
+          }}
+        >
           <p>📞 698 042 051</p>
           <p>📧 kpneurologopeda@gmail.com</p>
 
           <ContactForm />
         </div>
       </section>
+
     </main>
   );
 }
