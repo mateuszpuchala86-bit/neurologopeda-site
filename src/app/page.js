@@ -39,39 +39,91 @@ export default function Home() {
         <a href="#kontakt" style={linkStyle}>Kontakt</a>
       </nav>
 
-      {/* HERO */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "100px 20px"
-        }}
-      >
-        <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
-          Katarzyna Puchała
-        </h1>
+      {/* HERO PREMIUM */}
+<section
+  style={{
+    background: "linear-gradient(180deg, #F7F3EF 0%, #EFE7E1 100%)",
+    padding: "120px 20px 90px",
+    textAlign: "center"
+  }}
+>
 
-        <h2 style={{ fontWeight: 300, color: "#8B7D73" }}>
-          Neurologopeda kliniczny
-        </h2>
+  <span
+    style={{
+      display: "inline-block",
+      background: "#EFE7E1",
+      padding: "6px 14px",
+      borderRadius: "20px",
+      fontSize: "12px",
+      color: "#7A6A5F",
+      marginBottom: "20px"
+    }}
+  >
+    Neurologopedia kliniczna • Wczesna interwencja
+  </span>
 
-        <p style={{ maxWidth: "600px", margin: "20px auto", lineHeight: "1.7" }}>
-          Wspieram niemowlęta i dzieci w trudnościach karmienia i rozwoju.
-        </p>
+  <h1
+    style={{
+      fontSize: "46px",
+      marginBottom: "10px",
+      fontWeight: "600",
+      letterSpacing: "-0.5px"
+    }}
+  >
+    Katarzyna Puchała
+  </h1>
 
-        <a href="#kontakt">
-          <button
-            style={{
-              background: "#B8956A",
-              color: "white",
-              border: "none",
-              padding: "14px 28px",
-              borderRadius: "10px"
-            }}
-          >
-            Umów konsultację
-          </button>
-        </a>
-      </section>
+  <h2
+    style={{
+      fontWeight: "300",
+      color: "#8B7D73",
+      marginBottom: "25px"
+    }}
+  >
+    Neurologopeda kliniczny
+  </h2>
+
+  <p
+    style={{
+      maxWidth: "680px",
+      margin: "0 auto 30px",
+      lineHeight: "1.9",
+      fontSize: "17px",
+      color: "#4A4A4A"
+    }}
+  >
+    Wspieram niemowlęta i dzieci w trudnościach z karmieniem, oddychaniem
+    oraz rozwojem funkcji ustno-twarzowych.
+  </p>
+
+  <a href="#kontakt">
+    <button
+      style={{
+        background: "#B8956A",
+        color: "white",
+        border: "none",
+        padding: "14px 30px",
+        borderRadius: "12px",
+        cursor: "pointer",
+        fontSize: "15px",
+        boxShadow: "0 10px 25px rgba(0,0,0,0.12)"
+      }}
+    >
+      Umów konsultację
+    </button>
+  </a>
+
+  <p
+    style={{
+      marginTop: "22px",
+      fontSize: "13px",
+      color: "#9C8F85"
+    }}
+  >
+    Spokojne, indywidualne podejście • Terapia oparta na wiedzy klinicznej
+  </p>
+
+</section>
 
       {/* O MNIE */}
       <section id="o-mnie" style={{ padding: "80px 20px", textAlign: "center" }}>
