@@ -254,7 +254,7 @@ maxWidth: "320px",
 
     <br /><br />
 
-    Mojym celem jest nie tylko terapia, ale również wsparcie rodzica
+    Moiym celem jest nie tylko terapia, ale również wsparcie rodzica
     i budowanie poczucia bezpieczeństwa już od pierwszych dni życia dziecka.
   </p>
 </section>
