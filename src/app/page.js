@@ -70,7 +70,7 @@ flexWrap: "wrap",
       letterSpacing: "-0.5px"
     }}
   >
-    Neurologopeda Kielce – Katarzyna Puchała
+    Neurologopeda Katarzyna Puchała
   </h1>
 
   <h2 style={{
