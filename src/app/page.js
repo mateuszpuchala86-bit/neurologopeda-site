@@ -468,7 +468,9 @@ maxWidth: "320px",
       {/* KONTAKT */}
       <section id="kontakt" style={{ padding: "70px 16px", textAlign: "center" }}>
         <h2>Kontakt</h2>
-        <p>📞 698 042 051</p>
+        📞 <a href="tel:727411741" style={{ textDecoration: "none", color: "#3A3A3A" }}>
+  <b>727 411 741</b>
+</a>
         <p>📧 kpneurologopeda@gmail.com</p>
 
         <ContactForm />
