@@ -15,25 +15,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Neurologopeda kliniczny | Wsparcie karmienia niemowląt i dzieci",
-  description: "Neurologopeda kliniczny specjalizujący się w terapii niemowląt i dzieci. Wsparcie karmienia, rozwoju mowy i funkcji ustno-twarzowych.",
-
-  openGraph: {
-    title: "Neurologopeda kliniczny",
-    description: "Wsparcie niemowląt i dzieci w karmieniu i rozwoju.",
-    url: "https://twoja-domena.pl",
-    siteName: "Neurologopeda",
-    type: "website"
-  },
+  title: "Neurologopeda kliniczny [MIASTO] – terapia niemowląt i dzieci | Katarzyna Puchała",
+  description:
+    "Neurologopeda [miasto]. Terapia niemowląt i dzieci, problemy z karmieniem, oddychaniem i rozwojem mowy. Indywidualne wsparcie od pierwszych dni życia.",
 
   keywords: [
-    "neurologopeda",
-    "logopeda niemowląt",
-    "problemy z karmieniem",
-    "ssanie niemowlę",
+    "neurologopeda [miasto]",
+    "neurologopeda niemowlęta",
+    "problemy z karmieniem dziecka",
     "terapia logopedyczna dzieci",
-    "logopeda Świętokrzyskie"
-  ]
+    "neurologopeda dziecięcy",
+  ],
+
+  openGraph: {
+    title: "Neurologopeda kliniczny – [miasto] | Katarzyna Puchała",
+    description:
+      "Terapia niemowląt i dzieci. Problemy z karmieniem, oddychaniem i rozwojem mowy.",
+    url: "https://twoja-domena.pl",
+    siteName: "Neurologopeda – Katarzyna Puchała",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
