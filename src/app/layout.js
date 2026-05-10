@@ -15,12 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Neurologopeda kliniczny [MIASTO] – terapia niemowląt i dzieci | Katarzyna Puchała",
+  title:
+    "Neurologopeda kliniczny Kielce – terapia niemowląt i dzieci | Katarzyna Puchała",
+
   description:
-    "Neurologopeda [miasto]. Terapia niemowląt i dzieci, problemy z karmieniem, oddychaniem i rozwojem mowy. Indywidualne wsparcie od pierwszych dni życia.",
+    "Neurologopeda Kielce. Terapia niemowląt i dzieci, problemy z karmieniem, oddychaniem i rozwojem mowy. Indywidualne wsparcie od pierwszych dni życia.",
 
   keywords: [
-    "neurologopeda [miasto]",
+    "neurologopeda Kielce",
     "neurologopeda niemowlęta",
     "problemy z karmieniem dziecka",
     "terapia logopedyczna dzieci",
@@ -28,9 +30,10 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "Neurologopeda kliniczny – [miasto] | Katarzyna Puchała",
+    title:
+      "Neurologopeda kliniczny Kielce – Katarzyna Puchała",
     description:
-      "Terapia niemowląt i dzieci. Problemy z karmieniem, oddychaniem i rozwojem mowy.",
+      "Terapia niemowląt i dzieci w Kielcach. Problemy z karmieniem, oddychaniem i rozwojem mowy.",
     url: "https://twoja-domena.pl",
     siteName: "Neurologopeda – Katarzyna Puchała",
     type: "website",
@@ -41,7 +44,6 @@ export const metadata = {
     follow: true,
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html

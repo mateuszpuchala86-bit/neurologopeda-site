@@ -70,7 +70,7 @@ flexWrap: "wrap",
       letterSpacing: "-0.5px"
     }}
   >
-    Katarzyna Puchała
+    Neurologopeda Kielce – Katarzyna Puchała
   </h1>
 
   <h2 style={{
@@ -80,7 +80,7 @@ flexWrap: "wrap",
       marginBottom: "25px"
     }}
   >
-    Neurologopeda kliniczny
+    Terapia niemowląt i dzieci – Kielce i okolice
   </h2>
 
   <p
@@ -114,6 +114,14 @@ maxWidth: "320px",
       Umów konsultację
     </button>
   </a>
+
+<p style={{
+  marginTop: "10px",
+  fontSize: "13px",
+  color: "#9C8F85"
+}}>
+  Gabinet: Bilcza (Kielce i Morawica)
+</p>
 
   <p
     style={{
