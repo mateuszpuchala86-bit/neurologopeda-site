@@ -506,6 +506,70 @@ maxWidth: "320px",
     Oferowane narzędzia i metody zawarte są w cenie terapii.
   </p>
 </section>
+{/* LOKALIZACJA PREMIUM */}
+<section
+  style={{
+    padding: "100px 20px",
+    background: "#F7F3EF"
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+      gap: "40px",
+      alignItems: "center"
+    }}
+  >
+
+    {/* LEWA STRONA - TEKST */}
+    <div>
+      <h2 style={{ marginBottom: "20px", fontSize: "26px" }}>
+        Lokalizacja gabinetu
+      </h2>
+
+      <p style={{
+        lineHeight: "1.8",
+        color: "#4A4A4A",
+        marginBottom: "20px"
+      }}>
+        Gabinet znajduje się w <b>Bilczy</b> pod Kielcami.
+        Przyjmuję pacjentów z Kielc, Morawicy oraz okolicznych miejscowości.
+      </p>
+
+      <p style={{
+        color: "#8B7D73",
+        fontSize: "14px"
+      }}>
+        ✔ dogodny dojazd<br/>
+        ✔ spokojna lokalizacja<br/>
+        ✔ bezpłatny parking
+      </p>
+    </div>
+
+    {/* PRAWA STRONA - MAPA */}
+    <div
+      style={{
+        borderRadius: "16px",
+        overflow: "hidden",
+        boxShadow: "0 15px 40px rgba(0,0,0,0.1)"
+      }}
+    >
+      <iframe
+        src="https://www.google.com/maps?q=Bilcza&output=embed"
+        width="100%"
+        height="350"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+  </div>
+</section>
+
 {/* KONTAKT PREMIUM */}
 <section id="kontakt" style={{
   background: "#EFE7E1",
@@ -567,8 +631,24 @@ maxWidth: "320px",
       boxShadow: "0 15px 40px rgba(0,0,0,0.08)"
     }}>
       <ContactForm />
+<div style={{ marginTop: "40px" }}>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.4844954209725!2d20.616158812039846!3d50.785129063091894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c6ce25a876d039%3A0xa76407dc2d5be397!2sKatarzyna%20Pucha%C5%82a%20-%20Prywatny%20gabinet%20neurologopedyczny!5e0!3m2!1spl!2spl!4v1778488485749!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    width="100%"
+    height="300"
+    style={{ border: 0, borderRadius: "14px" }}
+    allowFullScreen=""
+    loading="lazy"
+  ></iframe>
+</div>
     </div>
-
+<p style={{
+  marginTop: "15px",
+  fontSize: "14px",
+  color: "#7A6A5F"
+}}>
+  Gabinet neurologopedyczny znajduje się w Bilczy – przyjmuję również pacjentów z Kielc i okolicznych miejscowości.
+</p>
   </div>
 
 </section>
