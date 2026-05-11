@@ -643,12 +643,15 @@ maxWidth: "320px",
 </section>
 {/* LOKALIZACJA PREMIUM */}
 <section
+  id="lokalizacja"
+  className="reveal"
   style={{
     padding: "100px 20px",
     background: "#F7F3EF"
   }}
 >
   <div
+    className="hover-card fade-in"
     style={{
       maxWidth: "1100px",
       margin: "0 auto",
@@ -676,16 +679,41 @@ maxWidth: "320px",
 
       <p style={{
         color: "#8B7D73",
-        fontSize: "14px"
+        fontSize: "14px",
+        marginBottom: "20px"
       }}>
         ✔ dogodny dojazd<br/>
         ✔ spokojna lokalizacja<br/>
         ✔ bezpłatny parking
       </p>
+
+      {/* PRZYCISK TRASY */}
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=Katarzyna+Puchała+neurologopeda+Bilcza"
+        target="_blank"
+        style={{ textDecoration: "none" }}
+      >
+        <button
+          className="hover-card"
+          style={{
+            padding: "12px 22px",
+            borderRadius: "12px",
+            border: "none",
+            background: "#B8956A",
+            color: "white",
+            cursor: "pointer",
+            fontSize: "14px",
+            boxShadow: "0 8px 20px rgba(0,0,0,0.10)"
+          }}
+        >
+          Wyznacz trasę
+        </button>
+      </a>
     </div>
 
     {/* PRAWA STRONA - MAPA */}
     <div
+      className="hover-card fade-in"
       style={{
         borderRadius: "16px",
         overflow: "hidden",
@@ -693,13 +721,25 @@ maxWidth: "320px",
       }}
     >
       <iframe
-        src="https://www.google.com/maps?q=Bilcza&output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d80716.97044077583!2d20.592815927679236!3d50.786596442096354!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c6ce25a876d039%3A0xa76407dc2d5be397!2sKatarzyna%20Pucha%C5%82a%20-%20Prywatny%20gabinet%20neurologopedyczny!5e0!3m2!1spl!2sus!4v1778498965557!5m2!1spl!2sus"
         width="100%"
         height="350"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
+
+      {/* OPIS POD MAPĄ */}
+      <p style={{
+        marginTop: "10px",
+        fontSize: "13px",
+        color: "#7A6A5F",
+        textAlign: "center",
+        padding: "10px"
+      }}>
+        Gabinet: Bilcza (Kielce • Morawica i okolice)
+      </p>
     </div>
 
   </div>
