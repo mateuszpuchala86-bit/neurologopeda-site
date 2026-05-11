@@ -81,11 +81,33 @@ flexWrap: "wrap",
   </h2>
 {/* BADGE GOOGLE */}
 <a
-  href="https://g.page/r/CZfjWy3cB2SnEBM/review"
+  href="https://g.page/r/YOUR_GOOGLE_ID/review"
   target="_blank"
   style={{ textDecoration: "none" }}
 >
-  ...badge...
+  <div
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "10px",
+      background: "white",
+      padding: "8px 16px",
+      borderRadius: "30px",
+      boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+      marginBottom: "25px"
+    }}
+  >
+    <span style={{ fontSize: "14px" }}>⭐⭐⭐⭐⭐</span>
+
+    <span
+      style={{
+        fontSize: "13px",
+        color: "#7A6A5F"
+      }}
+    >
+      Opinie Google
+    </span>
+  </div>
 </a>
   <p
     style={{
