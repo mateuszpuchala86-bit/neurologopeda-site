@@ -268,7 +268,7 @@ maxWidth: "320px",
   id="o-mnie"
   style={{
     background: "#EFE7E1",
-    padding: "110px 20px"
+    padding: "110px 20px",
     textAlign: "center"
   }}
 >
