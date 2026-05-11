@@ -443,7 +443,7 @@ maxWidth: "320px",
   id="cennik"
   style={{
     background: "#F7F3EF",
-    padding: "110px 20px"
+    padding: "110px 20px",
     textAlign: "center"
   }}
 >
