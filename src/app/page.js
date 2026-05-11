@@ -368,7 +368,7 @@ maxWidth: "320px",
       margin: "0 auto 40px",
       lineHeight: "1.9",
   fontSize: "clamp(14px, 3.5vw, 17px)",
-  color: "#4A4A4A
+  color: "#4A4A4A"
     }}
   >
     Pierwsze spotkanie ma na celu spokojną ocenę funkcjonowania dziecka
@@ -455,7 +455,7 @@ maxWidth: "320px",
       margin: "0 auto 40px",
       lineHeight: "1.9",
   fontSize: "clamp(14px, 3.5vw, 17px)",
-  color: "#4A4A4A
+  color: "#4A4A4A"
     }}
   >
     Transparentność i jasne zasady są podstawą współpracy terapeutycznej.
