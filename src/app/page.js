@@ -81,7 +81,7 @@ flexWrap: "wrap",
   </h2>
 {/* BADGE GOOGLE */}
 <a
-  href="https://g.page/r/YOUR_GOOGLE_ID/review"
+  href="https://g.page/r/CZfjWy3cB2SnEBM/review"
   target="_blank"
   style={{ textDecoration: "none" }}
 >
