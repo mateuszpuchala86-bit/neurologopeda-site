@@ -184,7 +184,7 @@ transition: "all 0.2 ease"
 
 </section>
 {/* DLACZEGO MI ZAUFAĆ */}
-<section style={{
+<section className="reveal" style={{
   background: "#EFE7E1",
   padding: "110px 20px",
   textAlign: "center"
