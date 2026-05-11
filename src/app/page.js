@@ -1,5 +1,8 @@
+"use client";
 import ContactForm from "../components/ContactForm";
 import ReviewsSection from "../components/ReviewsSection";
+
+import { useEffect } from "react";
 
 const linkStyle = {
   textDecoration: "none",
@@ -9,6 +12,22 @@ const linkStyle = {
 };
 
 export default function Home() {
+ useEffect(() => {
+    const elements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+  }, []);
   return (
     <main
       id="top"
@@ -49,8 +68,7 @@ flexWrap: "wrap",
   }}
 >
 
-  <span
-    style={{
+  <span className="fade-in" style={{
       display: "inline-block",
       background: "#EFE7E1",
       padding: "6px 14px",
@@ -63,7 +81,8 @@ flexWrap: "wrap",
     Neurologopedia kliniczna • Wczesna interwencja
   </span>
 
-  <h1 style={{
+  <h1 className="fade-in fade-delay-1"
+  style={{
   fontSize: "clamp(32px, 6vw, 52px)",
   marginBottom: "12px",
   fontWeight: "600",
@@ -72,7 +91,8 @@ flexWrap: "wrap",
     Neurologopeda Katarzyna Puchała
   </h1>
 
-  <h2 style={{
+  <h2 className="fade-in fade-delay-2"
+  style={{
   fontSize: "clamp(22px, 4vw, 28px)",
   marginBottom: "25px",
   letterSpacing: "-0.3px"
@@ -110,7 +130,8 @@ flexWrap: "wrap",
   </div>
 </a>
   <p
-    style={{
+    className="fade-in fade-delay-3"
+  style={{
       maxWidth: "680px",
       margin: "0 auto 30px",
       lineHeight: "1.9",
@@ -124,7 +145,8 @@ flexWrap: "wrap",
 
   <a href="#kontakt">
     <button
-      style={{
+      className="hover-card fade-in"
+  style={{
         background: "#B8956A",
         color: "white",
         border: "none",
@@ -171,7 +193,8 @@ transition: "all 0.2 ease"
     Dlaczego warto mi zaufać?
   </h2>
 
-  <div style={{
+  <div className="hover-card fade-in"
+  style={{
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
@@ -198,8 +221,7 @@ transition: "all 0.2 ease"
   </div>
 </section>
 {/* ZAUFANIE / FOTO */}
-<section
-  style={{
+<section className="reveal" style={{
     background: "#F7F3EF",
     padding: "70px 16px",
     display: "flex",
@@ -223,7 +245,8 @@ transition: "all 0.2 ease"
   />
 
   {/* TEKST */}
-  <div style={{ maxWidth: "500px" }}>
+  <div className="hover-card fade-in"
+  style={{ maxWidth: "500px" }}>
     <h2 style={{ fontSize: "26px", marginBottom: "15px" }}>
       Bezpieczna i spokojna terapia od pierwszych dni życia
     </h2>
@@ -243,8 +266,7 @@ transition: "all 0.2 ease"
 
 </section>
 {/* DLA KOGO */}
-<section
-  style={{
+<section className="reveal" style={{
     background: "#F7F3EF",
     padding: "110px 20px",
     textAlign: "center"
@@ -256,7 +278,8 @@ transition: "all 0.2 ease"
   </h2>
 
   <div
-    style={{
+    className="hover-card fade-in"
+  style={{
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
@@ -293,7 +316,7 @@ maxWidth: "320px",
      {/* O MNIE */}
 <section
   id="o-mnie"
-  style={{
+  className="reveal" style={{
     background: "#EFE7E1",
     padding: "110px 20px",
     textAlign: "center"
@@ -333,7 +356,7 @@ maxWidth: "320px",
      {/* ZAKRES */}
 <section
   id="zakres"
-  style={{
+  className="reveal" style={{
     background: "#F7F3EF",
     padding: "70px 16px",
     textAlign: "center"
@@ -344,7 +367,8 @@ maxWidth: "320px",
   </h2>
 
   <div
-    style={{
+    className="hover-card fade-in"
+  style={{
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
@@ -381,7 +405,7 @@ maxWidth: "320px",
 {/* PIERWSZA WIZYTA */}
 <section
   id="wizyta"
-  style={{
+  className="reveal" style={{
     background: "#F7F3EF",
     padding: "70px 16px",
     textAlign: "center"
@@ -405,7 +429,8 @@ maxWidth: "320px",
   </p>
 
   <div
-    style={{
+    className="hover-card fade-in"
+  style={{
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
@@ -464,7 +489,7 @@ maxWidth: "320px",
 </section>
       {/* OPINIE GOOGLE */}
 <section
-  style={{
+  className="reveal" style={{
     background: "#EFE7E1",
     padding: "100px 20px",
     textAlign: "center"
@@ -483,7 +508,8 @@ maxWidth: "320px",
     Zaufanie budowane doświadczeniem i spokojną terapią
   </p>
 
-  <div style={{
+  <div className="hover-card fade-in"
+  style={{
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
@@ -552,7 +578,8 @@ maxWidth: "320px",
       }}
     >
       <button
-        style={{
+        className="hover-card fade-in"
+  style={{
           background: "#B8956A",
           color: "white",
           border: "none",
@@ -574,7 +601,7 @@ maxWidth: "320px",
       {/* CENNIK PREMIUM */}
 <section
   id="cennik"
-  style={{
+  className="reveal" style={{
     background: "#F7F3EF",
     padding: "110px 20px",
     textAlign: "center"
@@ -597,7 +624,8 @@ maxWidth: "320px",
   </p>
 
   <div
-    style={{
+    className="hover-card fade-in"
+  style={{
       maxWidth: "800px",
       margin: "0 auto",
       display: "grid",
@@ -641,10 +669,10 @@ maxWidth: "320px",
     Oferowane narzędzia i metody zawarte są w cenie terapii.
   </p>
 </section>
-
 {/* LOKALIZACJA PREMIUM */}
 <section
   id="lokalizacja"
+  className="reveal"
   style={{
     padding: "100px 20px",
     background: "#F7F3EF"
@@ -746,12 +774,13 @@ maxWidth: "320px",
 </section>
 
 {/* KONTAKT PREMIUM */}
-<section id="kontakt" style={{
+<section id="kontakt" className="reveal" style={{
   background: "#EFE7E1",
   padding: "110px 20px"
 }}>
 
-  <div style={{
+  <div className="hover-card fade-in"
+  style={{
     maxWidth: "1100px",
     margin: "0 auto",
     display: "flex",
@@ -762,7 +791,8 @@ maxWidth: "320px",
   }}>
 
     {/* LEWA STRONA */}
-    <div style={{ flex: "1", minWidth: "280px" }}>
+    <div className="hover-card fade-in"
+  style={{ flex: "1", minWidth: "280px" }}>
 
       <h2 style={{ fontSize: "30px", marginBottom: "15px" }}>
         Umów wizytę
@@ -797,7 +827,8 @@ maxWidth: "320px",
     </div>
 
     {/* PRAWA STRONA */}
-    <div style={{
+    <div className="hover-card fade-in"
+  style={{
       flex: "1",
       minWidth: "280px",
       background: "white",
