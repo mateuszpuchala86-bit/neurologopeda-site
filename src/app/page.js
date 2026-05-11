@@ -641,10 +641,10 @@ maxWidth: "320px",
     Oferowane narzędzia i metody zawarte są w cenie terapii.
   </p>
 </section>
+
 {/* LOKALIZACJA PREMIUM */}
 <section
   id="lokalizacja"
-  className="reveal"
   style={{
     padding: "100px 20px",
     background: "#F7F3EF"
