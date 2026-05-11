@@ -57,29 +57,26 @@ flexWrap: "wrap",
       borderRadius: "20px",
       fontSize: "12px",
       color: "#7A6A5F",
-      marginBottom: "20px"
+      marginBottom: "25px"
     }}
   >
     Neurologopedia kliniczna • Wczesna interwencja
   </span>
 
   <h1 style={{
-  fontSize: "clamp(28px, 6vw, 46px)",
-      marginBottom: "10px",
-      fontWeight: "600",
-      letterSpacing: "-0.5px"
-    }}
-  >
+  fontSize: "clamp(32px, 6vw, 52px)",
+  marginBottom: "12px",
+  fontWeight: "600",
+  letterSpacing: "-0.8px"
+}}>
     Neurologopeda Katarzyna Puchała
   </h1>
 
   <h2 style={{
-  fontSize: "clamp(16px, 4vw, 22px)",
-      fontWeight: "300",
-      color: "#8B7D73",
-      marginBottom: "25px"
-    }}
-  >
+  fontSize: "clamp(22px, 4vw, 28px)",
+  marginBottom: "25px",
+  letterSpacing: "-0.3px"
+}}>
     Terapia niemowląt i dzieci – Kielce i okolice
   </h2>
 
@@ -102,13 +99,14 @@ flexWrap: "wrap",
         background: "#B8956A",
         color: "white",
         border: "none",
-        padding: "16px 28px",
+        padding: "15px 32px",
 width: "100%",
 maxWidth: "320px",
-        borderRadius: "12px",
+        borderRadius: "14px",
         cursor: "pointer",
         fontSize: "15px",
-        boxShadow: "0 10px 25px rgba(0,0,0,0.12)"
+        boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
+transition: "all 0.2 ease"
       }}
     >
       Umów konsultację
@@ -272,7 +270,7 @@ maxWidth: "320px",
     textAlign: "center"
   }}
 >
-  <h2 style={{ fontSize: "26px", marginBottom: "20px" }}>
+  <h2 style={{ fontSize: "26px", marginBottom: "25px" }}>
     O mnie
   </h2>
 
@@ -281,7 +279,7 @@ maxWidth: "320px",
       maxWidth: "750px",
       margin: "0 auto",
       lineHeight: "1.9",
-      fontSize: "16px",
+      fontSize: "clamp(14px, 3.5vw, 17px)",
       color: "#4A4A4A"
     }}
   >
@@ -368,9 +366,9 @@ maxWidth: "320px",
     style={{
       maxWidth: "750px",
       margin: "0 auto 40px",
-      lineHeight: "1.8",
-      fontSize: "16px",
-      color: "#4A4A4A"
+      lineHeight: "1.9",
+  fontSize: "clamp(14px, 3.5vw, 17px)",
+  color: "#4A4A4A
     }}
   >
     Pierwsze spotkanie ma na celu spokojną ocenę funkcjonowania dziecka
@@ -415,7 +413,7 @@ maxWidth: "320px",
           textAlign: "left"
         }}
       >
-        <h3 style={{ fontSize: "16px", marginBottom: "10px" }}>
+        <h3 style={{ fontSize: "16px", marginBottom: "14px" }}>
           {item.title}
         </h3>
         <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#555" }}>
@@ -447,7 +445,7 @@ maxWidth: "320px",
     textAlign: "center"
   }}
 >
-  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+  <h2 style={{ fontSize: "26px", marginBottom: "14px" }}>
     Cennik
   </h2>
 
@@ -455,9 +453,9 @@ maxWidth: "320px",
     style={{
       maxWidth: "650px",
       margin: "0 auto 40px",
-      lineHeight: "1.8",
-      fontSize: "15px",
-      color: "#4A4A4A"
+      lineHeight: "1.9",
+  fontSize: "clamp(14px, 3.5vw, 17px)",
+  color: "#4A4A4A
     }}
   >
     Transparentność i jasne zasady są podstawą współpracy terapeutycznej.
@@ -546,7 +544,7 @@ maxWidth: "320px",
         </a>
       </p>
 
-      <p style={{ marginBottom: "20px", fontSize: "16px" }}>
+      <p style={{ marginBottom: "25px", fontSize: "16px" }}>
         📧 kpneurologopeda@gmail.com
       </p>
 

@@ -50,7 +50,13 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={inter.className}>{children}</body>
+      <body
+  className={inter.className}
+  style={{
+    lineHeight: "1.6",
+    letterSpacing: "-0.2px"
+  }}
+>{children}</body>
     </html>
   );
 }
