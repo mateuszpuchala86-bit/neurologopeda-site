@@ -56,7 +56,36 @@ export default function RootLayout({ children }) {
     lineHeight: "1.6",
     letterSpacing: "-0.2px"
   }}
->{children}</body>
+>
+
+  {/* SEO SCHEMA */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Neurologopeda Katarzyna Puchała",
+        "image": "https://neurologopeda-site.vercel.app/doctor.jpg",
+        "telephone": "+48727411741",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bilcza",
+          "addressRegion": "Świętokrzyskie",
+          "addressCountry": "PL"
+        },
+        "areaServed": [
+          "Kielce",
+          "Morawica",
+          "Bilcza"
+        ]
+      })
+    }}
+  />
+
+  {children}
+
+</body>
     </html>
   );
 }
