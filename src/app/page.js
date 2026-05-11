@@ -433,7 +433,113 @@ maxWidth: "320px",
     Każde dziecko jest inne — tempo i forma pracy zawsze dostosowane są indywidualnie.
   </p>
 </section>
-      <ReviewsSection />
+      {/* OPINIE GOOGLE */}
+<section
+  style={{
+    background: "#EFE7E1",
+    padding: "100px 20px",
+    textAlign: "center"
+  }}
+>
+
+  <h2 style={{ fontSize: "26px", marginBottom: "10px" }}>
+    Opinie rodziców
+  </h2>
+
+  <p style={{
+    color: "#7A6A5F",
+    marginBottom: "40px",
+    fontSize: "14px"
+  }}>
+    Zaufanie budowane doświadczeniem i spokojną terapią
+  </p>
+
+  <div style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "25px",
+    maxWidth: "1100px",
+    margin: "0 auto"
+  }}>
+
+    {[
+      {
+        text: "Bardzo profesjonalne i spokojne podejście do dziecka. Już po kilku spotkaniach widoczna poprawa.",
+        author: "Mama 3-miesięcznego chłopca"
+      },
+      {
+        text: "Ogromna wiedza i cierpliwość. Czuliśmy się zaopiekowani od pierwszej wizyty.",
+        author: "Rodzice wcześniaka"
+      },
+      {
+        text: "Najlepsza decyzja. Terapia prowadzona w bardzo bezpiecznej atmosferze.",
+        author: "Mama 2-letniej dziewczynki"
+      }
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "25px",
+        borderRadius: "16px",
+        width: "300px",
+        boxShadow: "0 15px 35px rgba(0,0,0,0.08)",
+        textAlign: "left"
+      }}>
+        <p style={{
+          fontSize: "15px",
+          lineHeight: "1.7",
+          marginBottom: "15px"
+        }}>
+          ⭐⭐⭐⭐⭐
+        </p>
+
+        <p style={{
+          fontSize: "15px",
+          lineHeight: "1.7",
+          color: "#4A4A4A"
+        }}>
+          {item.text}
+        </p>
+
+        <p style={{
+          marginTop: "15px",
+          fontSize: "13px",
+          color: "#8B7D73"
+        }}>
+          — {item.author}
+        </p>
+      </div>
+    ))}
+
+  </div>
+
+  {/* CTA DO GOOGLE */}
+  <div style={{ marginTop: "40px" }}>
+    <a
+      href="https://g.page/r/CZfjWy3cB2SnEBM/review"
+      target="_blank"
+      style={{
+        textDecoration: "none"
+      }}
+    >
+      <button
+        style={{
+          background: "#B8956A",
+          color: "white",
+          border: "none",
+          padding: "14px 28px",
+          borderRadius: "12px",
+          cursor: "pointer",
+          fontSize: "15px",
+          boxShadow: "0 10px 25px rgba(0,0,0,0.12)"
+        }}
+      >
+        Zobacz opinie w Google
+      </button>
+    </a>
+  </div>
+
+</section>
 
       {/* CENNIK */}
       {/* CENNIK PREMIUM */}
