@@ -44,3 +44,9 @@ html {
     padding: 60px 15px !important;
   }
 }
+/* STICKY CALL – tylko mobile */
+@media (max-width: 768px) {
+  .mobile-call {
+    display: block !important;
+  }
+}

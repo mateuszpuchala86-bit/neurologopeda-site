@@ -575,6 +575,29 @@ maxWidth: "320px",
 
 </section>
       
+{/* STICKY CALL BUTTON MOBILE */}
+<a
+  href="tel:727411741"
+  style={{
+    position: "fixed",
+    bottom: "15px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    background: "#B8956A",
+    color: "white",
+    padding: "14px 22px",
+    borderRadius: "30px",
+    textDecoration: "none",
+    fontSize: "15px",
+    fontWeight: "500",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+    zIndex: 9999,
+    display: "none"
+  }}
+  className="mobile-call"
+>
+  📞 Zadzwoń teraz
+</a>
     </main>
   );
 }
