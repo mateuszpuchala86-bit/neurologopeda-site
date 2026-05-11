@@ -631,16 +631,6 @@ maxWidth: "320px",
       boxShadow: "0 15px 40px rgba(0,0,0,0.08)"
     }}>
       <ContactForm />
-<div style={{ marginTop: "40px" }}>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.4844954209725!2d20.616158812039846!3d50.785129063091894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5c6ce25a876d039%3A0xa76407dc2d5be397!2sKatarzyna%20Pucha%C5%82a%20-%20Prywatny%20gabinet%20neurologopedyczny!5e0!3m2!1spl!2spl!4v1778488485749!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-    width="100%"
-    height="300"
-    style={{ border: 0, borderRadius: "14px" }}
-    allowFullScreen=""
-    loading="lazy"
-  ></iframe>
-</div>
     </div>
 <p style={{
   marginTop: "15px",
