@@ -134,6 +134,42 @@ maxWidth: "320px",
   </p>
 
 </section>
+{/* DLACZEGO MI ZAUFAĆ */}
+<section style={{
+  background: "#EFE7E1",
+  padding: "110px 20px",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: "26px", marginBottom: "40px" }}>
+    Dlaczego warto mi zaufać?
+  </h2>
+
+  <div style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "25px"
+  }}>
+
+    {[
+      "Indywidualne podejście do każdego dziecka",
+      "Doświadczenie kliniczne",
+      "Spokojna i bezpieczna atmosfera",
+      "Współpraca ze specjalistami"
+    ].map((item, i) => (
+      <div key={i} style={{
+        background: "white",
+        padding: "25px",
+        borderRadius: "16px",
+        width: "260px",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.06)"
+      }}>
+        {item}
+      </div>
+    ))}
+
+  </div>
+</section>
 {/* ZAUFANIE / FOTO */}
 <section
   style={{
@@ -183,7 +219,7 @@ maxWidth: "320px",
 <section
   style={{
     background: "#F7F3EF",
-    padding: "70px 16px",
+    padding: "110px 20px",
     textAlign: "center"
   }}
 >
@@ -212,11 +248,11 @@ maxWidth: "320px",
         key={i}
         style={{
           background: "white",
-          padding: "20px",
-          borderRadius: "14px",
+          padding: "25px",
+          borderRadius: "16px",
           width: "100%",
 maxWidth: "320px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
           fontSize: "15px",
           lineHeight: "1.6"
         }}
@@ -232,7 +268,7 @@ maxWidth: "320px",
   id="o-mnie"
   style={{
     background: "#EFE7E1",
-    padding: "70px 16px",
+    padding: "110px 20px"
     textAlign: "center"
   }}
 >
@@ -300,11 +336,11 @@ maxWidth: "320px",
         key={i}
         style={{
           background: "white",
-          padding: "22px",
-          borderRadius: "14px",
+          padding: "25px",
+          borderRadius: "16px",
           width: "100%",
 maxWidth: "320px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
           fontSize: "15px"
         }}
       >
@@ -371,11 +407,11 @@ maxWidth: "320px",
         key={i}
         style={{
           background: "white",
-          padding: "22px",
-          borderRadius: "14px",
+          padding: "25px",
+          borderRadius: "16px",
           width: "100%",
 maxWidth: "320px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
           textAlign: "left"
         }}
       >
@@ -407,7 +443,7 @@ maxWidth: "320px",
   id="cennik"
   style={{
     background: "#F7F3EF",
-    padding: "70px 16px",
+    padding: "110px 20px"
     textAlign: "center"
   }}
 >
@@ -447,12 +483,12 @@ maxWidth: "320px",
         key={i}
         style={{
           background: "white",
-          padding: "20px 24px",
-          borderRadius: "14px",
+          padding: "25px",
+          borderRadius: "16px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
           fontSize: "15px"
         }}
       >
@@ -472,17 +508,73 @@ maxWidth: "320px",
     Oferowane narzędzia i metody zawarte są w cenie terapii.
   </p>
 </section>
+{/* KONTAKT PREMIUM */}
+<section id="kontakt" style={{
+  background: "#EFE7E1",
+  padding: "110px 20px"
+}}>
 
-      {/* KONTAKT */}
-      <section id="kontakt" style={{ padding: "70px 16px", textAlign: "center" }}>
-        <h2>Kontakt</h2>
+  <div style={{
+    maxWidth: "1100px",
+    margin: "0 auto",
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "40px",
+    alignItems: "center",
+    justifyContent: "center"
+  }}>
+
+    {/* LEWA STRONA */}
+    <div style={{ flex: "1", minWidth: "280px" }}>
+
+      <h2 style={{ fontSize: "30px", marginBottom: "15px" }}>
+        Umów wizytę
+      </h2>
+
+      <p style={{
+        lineHeight: "1.8",
+        color: "#4A4A4A",
+        marginBottom: "25px"
+      }}>
+        Jeśli masz pytania dotyczące rozwoju dziecka, karmienia lub terapii —
+        skontaktuj się ze mną. Odpowiem i dobierzemy najlepszą formę wsparcia.
+      </p>
+
+      <p style={{ marginBottom: "12px", fontSize: "16px" }}>
         📞 <a href="tel:727411741" style={{ textDecoration: "none", color: "#3A3A3A" }}>
-  <b>727 411 741</b>
-</a>
-        <p>📧 kpneurologopeda@gmail.com</p>
+          <b>727 411 741</b>
+        </a>
+      </p>
 
-        <ContactForm />
-      </section>
+      <p style={{ marginBottom: "20px", fontSize: "16px" }}>
+        📧 kpneurologopeda@gmail.com
+      </p>
+
+      <p style={{
+        fontSize: "13px",
+        color: "#8B7D73"
+      }}>
+        Gabinet: Bilcza (Kielce i Morawica)
+      </p>
+
+    </div>
+
+    {/* PRAWA STRONA */}
+    <div style={{
+      flex: "1",
+      minWidth: "280px",
+      background: "white",
+      padding: "30px",
+      borderRadius: "16px",
+      boxShadow: "0 15px 40px rgba(0,0,0,0.08)"
+    }}>
+      <ContactForm />
+    </div>
+
+  </div>
+
+</section>
+      
     </main>
   );
 }
